@@ -1,0 +1,11 @@
+import random
+
+password = ""
+liste = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+soru = int(input("Şifreniz kaç karakterden oluşacak ?"))
+
+for i in range(soru):
+    password += random.choice(liste)
+
+print(password)
